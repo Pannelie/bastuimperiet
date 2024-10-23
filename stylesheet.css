@@ -1,0 +1,134 @@
+:root {
+--nav-link: #dccdca;
+--nav-bg: #343434;
+--nav-link-chosen: #703031;
+--nav-font-family: 'arial, sans-serif';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(assets/wood2.jpg);
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+    min-width: 375px;
+    display: flex;
+    height: fit-content;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 10%;
+    
+}
+
+.link__nav {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1,5rem;
+    color: var(--nav-link);
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.link__nav:hover {
+    color:#c3c3c3;
+}
+
+.chosen {
+    background-color: var(--nav-link-chosen);
+
+}
+
+.navbar li {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+.logo {
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+
+.main {
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+.prompter {
+    display: flex;
+    width: 490px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin:1rem 1rem;
+}
+
+.prompter__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info {
+    display: flex;
+    width: 490px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin:2rem 1rem 0rem;
+}
+
+
+.home__image {
+    max-width: 500px;
+    height: 415px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: url(assets/OutsideParking.jpg) lightgray 0px -37.024px / 100% 109.349% no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem 1rem;
+}
+
+p {
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--nav-bg);
+    justify-self: flex-end;
+    padding: 0.5rem;
+    color: var(--nav-link);
+    text-align: center;
+}
